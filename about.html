@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <title>About Me</title>
+</head>
+<body>
+
+    <header>
+	    <section id="Welcome" class="TopSec">
+            <h1>Welcome to My Website!</h1>
+            <p>This Site's Purpose Is For a WebDev Project</p>
+        </section>
+        <nav>
+            
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>         
+        </nav>
+    </header>
+
+    <main>
+        <button onclick="DisplayImg('pic1')">Me & My Girlfriend </button> <!-- These buttons display the pictures -->
+        <button onclick="DisplayImg('pic2')">My Dad & Hutch </button>
+        <button onclick="DisplayImg('pic3')">Me Making Eggrolls </button>
+
+        <img class = "photo" id = "pic1" src = "\images\lunch.jpg" height="300" style = "display: none;"> <!-- Import and manage pictures -->
+        <img class = "photo" id = "pic2" src = "\images\hutch.jpg" height="300" style="display: none;">
+        <img class = "photo" id = "pic3" src = "\images\eggrolls.jpg" height="300" style="display: none;">
+
+    <script> 
+        function DisplayImg(id) { //Since the pictures are hidden until the button is clicked, this function reveals them.
+            var images = document.getElementsByTagName('pic');
+
+            for (var i = 0; i < images.length; i++) {
+                img[i].sytle.DisplayImg = 'none';
+            }
+
+            var selectedImage = document.getElementById(id);
+            if(selectedImage) {
+                selectedImage.style.display = 'block';
+            }
+        }
+    </script>
+        <section id="AboutMe" class="info">
+            <h4>^^ Click on these to see some of my favorite pictures ^^</h4>
+            <h2>About Me:</h2> <!-- Section for about me information -->
+            <p>
+                My name is John Oakley! I am a senior at Kennesaw State University majoring in Information Technology with my concentration in Cyber Operations Security. 
+                I currently do school, work as an undergrad researcher, and at a CO-OP 5 days a week for IT Enterprise Systems and Analyst. 
+                My hopes are that the parent company of whom I currently work for will offer me a position to work in their Cybersecurity division.
+                <br><br>
+                I am from Newnan, Georgia. It’s about an hour south of Kennesaw. Most people seem to not know where it is until I tell them it’s where The Walking Dead was filmed. 
+                I got lucky with where I lived because my elementary school, middle school, and high school were all within one mile of where I lived, but now home seems so far away!
+                <br><br>
+                Being that I am in IT, it’s pretty much a given that I’m a nerd. Building and repairing computers has been my hobby since the 9th grade. 
+                I’ve built computers for some of my high school teachers, family, friends, and myself many times.
+                 I also like playing bass guitar. I haven’t performed in front of a crowd in quite some time though. 
+            </p>
+        </section>
+
+        <section id="contact" class="button"> <!-- Section for contact button -->
+            <h2>Contact Me!</h2>
+            <p>Get in touch with me for inquiries</p>
+            <a href="contact.html">Contact</a> <!-- Contact link -->
+        </section>
+
+    </main>
+</body>
+
+	
+	<style>
+.photo {
+    display: block;
+    padding: 8px;
+    margin: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+			background-color: hsl(0, 0%, 25%);
+			padding: 0px;
+			margin: 0px;
+			overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+			text-decoration: none;
+			padding: 8px;
+			display: block;
+			text-align: center
+}
+
+nav a:hover {
+	background-color: hsl(0,0%,10%);
+}
+
+.main {
+    padding: 20px;
+}
+
+.TopSec {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.info {
+    text-align: center;
+    padding: 60px;
+    margin-left: 600px;
+    width: 600px;
+}
+
+.button {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.button a {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+}
+	</style>
+</HTML>

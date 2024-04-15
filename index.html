@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <title>Home Page</title> <!-- Title of the webpage -->
+</head>
+<body>
+
+    <header><!-- Header section of the webpage -->
+        <section id="Welcome" class="TopSec">
+            <h1>Welcome to My Website!</h1>
+            <p>This Site's Purpose Is For a WebDev Project</p>
+        </section>
+        <nav><!-- Navigation section -->
+            
+                <li><a href="index.html">Home</a></li> <!-- Home page link -->
+                <li><a href="about.html">About</a></li> <!-- About page link -->
+        </nav>
+    </header>
+
+
+
+    <img class="photo" src="/images/FullSizeRender.jpg" height = 300>
+
+    <main> <!-- Main content section to help me better organize my thoughts/code-->
+        <section id="GoalsSec" class="goals">
+            <h4>This is a photo of me, my girlfriend, parents, and dog!</h4>
+            <h2>Goals for This Site</h2>
+            <ul> <!-- Unordered list of goals -->
+                <li>Include Several Pictures</li>
+                <li>Keep CSS to a clean, user-friendly design</li>
+                <li>Add basic interactivity using JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="button"> <!-- Section for contact button -->
+            <h2>Contact Me!</h2>
+            <p>Get in touch with me for inquiries</p>
+            <a href="contact.html">Contact</a> <!-- Contact link -->
+        </section>
+
+    </main>
+</body>
+
+	
+<style>
+.photo {
+    display: block;
+    padding: 8px;
+    margin: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+			background-color: hsl(0, 0%, 25%);
+			padding: 0px;
+			margin: 0px;
+			overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+			text-decoration: none;
+			padding: 8px;
+			display: block;
+			text-align: center
+}
+
+nav a:hover {
+	background-color: hsl(0,0%,10%);
+}
+
+.main {
+    padding: 20px;
+}
+
+.TopSec {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.goals {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.goals ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.button a {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+}
+</style>
+</HTML>

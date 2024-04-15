@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <header>
+	    <section id="Welcome" class="TopSec">
+            <h1>Welcome to My Website!</h1>
+            <p>This Site's Purpose Is For a WebDev Project</p>
+        </section>
+        <nav>
+            
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About</a></li>         
+        </nav>
+    </header>
+
+    <main>
+        <section id="ContactInfo" class="info"> <!-- Contains my contact information-->
+            <h2>Contact Information</h2>
+            <p>
+            <h5>E-Mail: joakley7@students.kennesaw.edu</h5>
+            <h5>LinkedIn: <a href = "https://www.linkedin.com/in/john-oakley-614a5b18a/">Click Here!</a></h5> <!-- Hyperlinks my LinkedIn page to "Click Here!" -->
+            </p>
+        </section>
+
+        <section id="contact" class="button"> <!-- This section is for the user to submit their email address for further contact-->
+            <h2>Contact Me!</h2>
+            <p>Get in touch with me for inquiries</p>
+            <p>List Your Contact Info Here!</p>
+            <form action="/submit-form" method="post"> <!-- Contact Form Submission-->
+                <label for="email">E-Mail:</label>
+                <input type="text" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+	
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+			background-color: hsl(0, 0%, 25%);
+			padding: 0px;
+			margin: 0px;
+			overflow: hidden;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+			text-decoration: none;
+			padding: 8px;
+			display: block;
+			text-align: center
+}
+
+nav a:hover {
+	background-color: hsl(0,0%,10%);
+}
+
+.main {
+    padding: 20px;
+}
+
+.TopSec {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.info {
+    text-align: center;
+    padding: 60px;
+    margin-left: 600px;
+    width: 600px;
+}
+
+.button {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.button a {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+}
+</style>
+</HTML>
