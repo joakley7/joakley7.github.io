@@ -18,28 +18,28 @@
     </header>
 
     <main>
-        <button onclick="DisplayImg('pic1')">Me & My Girlfriend </button> <!-- These buttons display the pictures -->
-        <button onclick="DisplayImg('pic2')">My Dad & Hutch </button>
-        <button onclick="DisplayImg('pic3')">Me Making Eggrolls </button>
-
-        <img class = "photo" id = "pic1" src = "\images\lunch.jpg" height="300" style = "display: none;"> <!-- Import and manage pictures -->
-        <img class = "photo" id = "pic2" src = "\images\hutch.jpg" height="300" style="display: none;">
-        <img class = "photo" id = "pic3" src = "\images\eggrolls.jpg" height="300" style="display: none;">
+        <button onclick="DisplayImg(0)">Me Making Eggrolls </button> <!-- These buttons display the pictures -->
+        <button onclick="DisplayImg(1)">My Dad & Hutch </button>
+        <button onclick="DisplayImg()">Me & My Girlfriend </button>
 
     <script> 
-        function DisplayImg(id) { //Since the pictures are hidden until the button is clicked, this function reveals them.
-            var images = document.getElementsByTagName('pic');
-
-            for (var i = 0; i < images.length; i++) {
-                img[i].sytle.DisplayImg = 'none';
-            }
-
-            var selectedImage = document.getElementById(id);
-            if(selectedImage) {
-                selectedImage.style.display = 'block';
-            }
+        function DisplayImg(sw) { //Function that links to the button picture display
+         var pic;
+        if (sw == 0) {
+        pic = "/images/eggrolls.jpg"
+        } 
+        else if (sw == 1) {
+        pic = "images/hutch.jpg"
+        } 
+        else {
+        pic = "images/lunch.jpg"
         }
+        document.getElementById('pics').src = pic;
+    }
     </script>
+            <img class = "photo" id = "pics" src = "\images\lunch.jpg" height="300"> <!-- Import and manage pictures -->
+
+
         <section id="AboutMe" class="info">
             <h4>^^ Click on these to see some of my favorite pictures ^^</h4>
             <h2>About Me:</h2> <!-- Section for about me information -->
